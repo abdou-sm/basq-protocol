@@ -1,4 +1,10 @@
 # never commit secrets or local chain data
 .env
+!.env.example
 cache/
 out/
+broadcast/**/dry-run/
+*.log
+.DS_Store
+coverage/
+lcov.info
