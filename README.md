@@ -66,4 +66,4 @@ Owner trust is explicit (weights, listings, feeds) — use a multisig in product
 
 ## License
 
-CC0-1.0 — every source file carries the `CC0-1.0` SPDX header. OpenZeppelin contracts remain under their own license.
+All rights reserved — this project carries no open-source license. No permission is granted to use, copy, modify, or distribute this software except by the rights holder.
