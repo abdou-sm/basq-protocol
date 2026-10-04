@@ -1,0 +1,4 @@
+# never commit secrets or local chain data
+.env
+cache/
+out/

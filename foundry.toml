@@ -1,0 +1,36 @@
+[profile.default]
+auto_detect_solc = false
+bytecode_hash = "none"
+evm_version = "cancun"
+via_ir = true
+fuzz = { runs = 1_000 }
+gas_reports = ["*"]
+invariant = { depth = 64, fail_on_revert = true, runs = 64 }
+optimizer = true
+optimizer_runs = 10_000
+out = "out"
+solc = "0.8.36"
+src = "src"
+test = "tests"
+
+[[profile.default.additional_compiler_profiles]]
+name = "factory"
+optimizer_runs = 200
+
+[[profile.default.compilation_restrictions]]
+paths = "src/*Factory.sol"
+optimizer_runs = 200
+
+[rpc_endpoints]
+robinhood_testnet = "https://rpc.testnet.chain.robinhood.com/rpc"
+
+[fmt]
+bracket_spacing = true
+int_types = "long"
+line_length = 120
+multiline_func_header = "all"
+number_underscore = "thousands"
+prefer_compact = "none"
+quote_style = "double"
+tab_width = 4
+wrap_comments = true
