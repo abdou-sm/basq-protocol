@@ -64,6 +64,3 @@ forge script script/DeployTestnet.s.sol:DeployTestnet \
 
 Owner trust is explicit (weights, listings, feeds) — use a multisig in production. Oracle lag enables 1-tx contribute+withdraw arbitrage: add entry/exit fees or same-block guards before mainnet. Proportional `withdraw` never touches the oracle, so exits work even on stale feeds. Testnet adapter is inventory-backed and test-only. Not audited — experimental software, not investment advice. Tokenized stocks unavailable to US/UK/CA/CH persons.
 
-## License
-
-All rights reserved — this project carries no open-source license. No permission is granted to use, copy, modify, or distribute this software except by the rights holder.
